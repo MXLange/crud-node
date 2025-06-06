@@ -1,0 +1,28 @@
+### Listar produtos
+GET http://localhost:8080/products
+Accept: application/json
+
+### Criar produto
+POST http://localhost:8080/products
+Content-Type: application/json
+
+{
+  "name": "Estrela do Norte",
+  "price": 19.99
+}
+
+### Buscar produto por ID
+GET http://localhost:8080/products/1
+Accept: application/json
+
+### Atualizar produto
+PUT http://localhost:8080/products/1
+Content-Type: application/json
+
+{
+  "name": "Estrela do Norte Atualizado",
+  "price": 29.98
+}
+
+### Deletar produto
+DELETE http://localhost:8080/products/1
